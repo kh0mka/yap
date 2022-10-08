@@ -1,0 +1,147 @@
+body nav {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+body nav a {
+    padding-right: 5px;
+    margin-right: 5px;
+    color: #408253;
+    text-decoration: none;
+}
+
+body nav a:hover {
+    color: #326540;
+}
+
+body nav a:not(:last-child) {
+    border-right: 1px solid #00000034;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    min-width: 360px;
+    min-height: 100%;
+}
+
+body .tables {
+    padding: 15px;
+}
+
+body header h1 {
+    text-align: center;
+}
+
+main header h1 {
+    text-align: center;
+    font-size: 64px;
+}
+
+.babySupplies {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.babySupplies h4 {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.babySupplies .shopInfo {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 33px;
+}
+
+.tables header h4 {
+    font-size: 48px;
+}
+
+footer {
+    font-size: 18px;
+    text-align: right;
+}
+
+svg {
+    fill: rgb(255, 255, 255);
+    stroke: black;
+    stroke-width: 2;
+    height: 20px;
+  }
+  
+  .chancellery-image,
+  .nav-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  .tables {
+    margin-bottom: 9px;
+}
+
+table {
+    border: 1px solid #408253;
+    border-collapse: collapse;
+    min-width: 100%;
+    font-size: 30px;
+    background-color: #D9F0E0;
+    margin-bottom: 10px;
+}
+
+th {
+    border: 1px solid #408253;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #408253;
+    padding: 9px;
+    text-align: justify;
+    text-align: center;
+}
+
+.discounts-info {
+    background-color: #408253;
+    color: white;
+    font-style: italic;
+    min-width: 100%;
+}
+
+.discounts-info .left{
+    text-align: left;
+}
+
+.discounts-info td {
+    border: 1px solid #FFFFFF;
+    text-align: center;
+}
+
+.default-font-style {
+    font-style: normal;
+}
+
+.discounts-info .italic {
+    font-style: italic;
+}
+
+.note {
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
