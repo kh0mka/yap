@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="ru">  
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -13,7 +12,7 @@
     <nav>
         <a href="#paints">Краски </a>
         <a href="#brushes"> Кисточки </a>
-        <a href="#glasses"> Карандаши</a>
+        <a href="#cups-with-pencils"> Карандаши</a>
     </nav>
     <main>
         <header>
@@ -36,7 +35,119 @@
                 Большой выбор фломастеров, карандашей, тетрадей.
             </div>
         </article>
+        <article class="image-map">
+            <map name="map1">
+                <area shape="rect" coords="600,200,820,460" href="#paints" alt="kit table">
+                <area shape="rect" coords="600,20,750,140" href="#cups-with-pencils" alt="kit table">
+                <area shape="rect" coords="0,20,580,690" href="https://arzamas.academy/mag/927-impressionism"
+                    target="blank" alt="kit table">
+                <area shape="poly" coords="1200,520,1000,120,940,100,900,60,850,290,1100,600,1200,520"
+                    href="#brushes" alt="kit table">
+            </map>
+            <img class="nav-image" src="./../img/imagemap.svg" usemap="#map1" alt="NavImage">
+        </article>
+        <article class="tables">
+            <header id="paints">
+                <h4>
+                    <img src="./../img/watercolor.png" width="40" alt="WatercolorLogo">
+                    Набор акварелей
+                </h4>
+            </header>
+            <table>
+                <tr>
+                    <th>10 шт.</th>
+                    <th>20 шт.</th>
+                    <th>30 шт.</th>
+                    <th>40 шт.</th>
+                    <th>50 шт.</th>
+                    <th>60 шт.</th>
+                </tr>
+                <tr>
+                    <td>10 BYN</td>
+                    <td>20 BYN</td>
+                    <td>30 BYN</td>
+                    <td>40 BYN</td>
+                    <td>50 BYN</td>
+                    <td>60 BYN</td>
+                </tr>
+                <tr class="discounts">
+                    <td colspan="4" class="left">*Скидка 5% при покупке от 30шт.</td>
+                    <td>*6%</td>
+                    <td>*7%</td>
+                </tr>
+            </table>
+            <header id="brushes">
+                <h4>
+                    <object type="image/svg+xml" data="./../img/tassel.svg" width="20">
+                        Your browser does not support SVG
+                    </object>
+                    Набор кисточек
+                </h4>
+            </header>
+            <table>
+                <tr>
+                    <th>10 шт.</th>
+                    <th>20 шт.</th>
+                    <th>30 шт.</th>
+                    <th>40 шт.</th>
+                    <th>50 шт.</th>
+                    <th>60 шт.</th>
+                </tr>
+                <tr>
+                    <td>5 BYN</td>
+                    <td>10 BYN</td>
+                    <td>15 BYN</td>
+                    <td>20 BYN</td>
+                    <td>25 BYN</td>
+                    <td>30 BYN</td>
+                </tr>
+            </table>
+            <header id="cups-with-pencils">
+                <h4>
+                    <svg width="20">
+                        <polygon points="1,1,19,1,16,19,4,19,1,1"></polygon>
+                        <polygon points="3,5,17,5"></polygon>
+                    </svg>
+                    Стаканчики
+                </h4>
+            </header>
+            <table>
+                <tr>
+                    <th>1 шт.</th>
+                    <th>2 шт.</th>
+                    <th>3 шт.</th>
+                    <th>4 шт.</th>
+                    <th>5 шт.</th>
+                    <th>6 шт.</th>
+                </tr>
+                <tr>
+                    <td>3 BYN</td>
+                    <td>5 BYN</td>
+                    <td>7 BYN</td>
+                    <td>9 BYN</td>
+                    <td>11 BYN</td>
+                    <td>13 BYN</td>
+                </tr>
+                <tr class="discounts default-font-style">
+                    <td colspan="2" rowspan="2" class="italic left">*Скидки для юридических лиц, использующих
+                        безналичный расчет</td>
+                    <td>100 шт.</td>
+                    <td>200 шт.</td>
+                    <td colspan="2">от 300 шт.</td>
+                </tr>
+                <tr class="discounts default-font-style">
+                    <td>5%</td>
+                    <td>6%</td>
+                    <td>7%</td>
+                    <td>**8%</td>
+                </tr>
+            </table>
+            <span class="note">**только для постоянный клиентов</span>
+        </article>
     </main>
+    <footer>
+        &#169; БГУИР, 2022
+    </footer>
 </body>
 
 </html>

@@ -90,8 +90,8 @@ svg {
     width: auto;
   }
 
-  .tables {
-    margin-bottom: 9px;
+.tables {
+    margin-bottom: -50px;
 }
 
 table {
@@ -116,27 +116,32 @@ td {
     text-align: center;
 }
 
-.discounts-info {
+.discounts {
     background-color: #408253;
     color: white;
     font-style: italic;
     min-width: 100%;
 }
 
-.discounts-info .left{
+.discounts .left{
     text-align: left;
 }
 
-.discounts-info td {
+.discounts td {
     border: 1px solid #FFFFFF;
     text-align: center;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px
 }
 
 .default-font-style {
     font-style: normal;
 }
 
-.discounts-info .italic {
+.discounts .italic {
     font-style: italic;
 }
 
@@ -145,3 +150,4 @@ td {
     letter-spacing: 1px;
     opacity: 0.7;
 }
+
