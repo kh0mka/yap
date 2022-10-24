@@ -14,14 +14,10 @@ body nav a:hover {
     color: #326540;
 }
 
-body nav a:not(:last-child) {
-    border-right: 1px solid #00000034;
-}
-
 body {
     background-color: #ffffff;
     color: #000000;
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
     font-size: 10px;
     min-width: 360px;
     min-height: 100%;
@@ -48,7 +44,7 @@ main header h1 {
 .babySupplies h4 {
     font-size: 48px;
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -58,7 +54,7 @@ main header h1 {
 .babySupplies .shopInfo {
     font-size: 24px;
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 300;
     line-height: 33px;
@@ -71,6 +67,7 @@ main header h1 {
 footer {
     font-size: 18px;
     text-align: right;
+    margin-top: 45px;
 }
 
 svg {
@@ -78,17 +75,17 @@ svg {
     stroke: black;
     stroke-width: 2;
     height: 20px;
-  }
-  
-  .chancellery-image,
-  .nav-image {
+}
+
+.chancellery-image,
+.nav-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
     height: auto;
     width: auto;
-  }
+}
 
 .tables {
     margin-bottom: -50px;
@@ -114,6 +111,7 @@ td {
     padding: 9px;
     text-align: justify;
     text-align: center;
+    max-width: 211px;
 }
 
 .discounts {
@@ -121,16 +119,17 @@ td {
     color: white;
     font-style: italic;
     min-width: 100%;
+    margin-left: 3px;
 }
 
-.discounts .left{
+.discounts .left {
     text-align: left;
 }
 
 .discounts td {
     border: 1px solid #FFFFFF;
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-style: italic;
     font-weight: 600;
     font-size: 30px;
@@ -150,4 +149,3 @@ td {
     letter-spacing: 1px;
     opacity: 0.7;
 }
-
