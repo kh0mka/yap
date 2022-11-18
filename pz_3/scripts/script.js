@@ -101,4 +101,3 @@ function validateNumbersInput(evt) {
     if (theEvent.preventDefault) theEvent.preventDefault();
   }
 }
-
