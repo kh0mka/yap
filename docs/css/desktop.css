@@ -78,6 +78,10 @@ nav {
   display: flex;
 }
 
+.content-img{
+  max-height: 600px;
+}
+
 .nav-item {
   padding: 0 20px;
   position: relative;
