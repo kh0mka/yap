@@ -79,7 +79,7 @@ nav {
 }
 
 .nav-item {
-  padding: 0 px;
+  padding: 0 20px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -374,7 +374,7 @@ button:focus {
   align-items: flex-start;
 }
 
-#form .order-call-title{
+#call-form .order-call-title{
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 30px;
