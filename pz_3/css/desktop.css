@@ -228,7 +228,7 @@ nav {
 }
 
 #main-slider .slider-item:first-of-type {
-  background: url(../img/main-image-door.jpg) no-repeat;
+  background: url(../img/main-image-library.jpg) no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.29);
   background-blend-mode: multiply;
@@ -371,7 +371,7 @@ button:focus {
   background-color: white;
 }
 
-.form {
+form {
   padding: 55px 168px 60px 110px;
   display: flex;
   flex-direction: column;
@@ -379,10 +379,10 @@ button:focus {
   align-items: flex-start;
 }
 
-#form .order-call-title{
+#call-form .order-call-title{
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 .text-input {
