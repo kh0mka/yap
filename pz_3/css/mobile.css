@@ -9,6 +9,10 @@
     width: inherit;
   }
 
+  .nav-item{
+    padding: 0 0;
+  }
+
   .header {
     padding: 20px;
     height: auto;
