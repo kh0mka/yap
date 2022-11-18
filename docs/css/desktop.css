@@ -79,17 +79,13 @@ nav {
 }
 
 .nav-item {
-  padding: 0 5px;
+  padding: 0 px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-bottom: 2px solid #464547;
-}
-
-.nav-item+.nav-item {
-  margin-left: 20px;
 }
 
 .slider-wrapper {
@@ -99,7 +95,7 @@ nav {
 .content-wrapper {
   margin: 0 auto;
   width: 1240px;
-  height: 570px;
+  min-height: 570px;
   display: flex;
   justify-content: space-between;
 }
@@ -170,7 +166,6 @@ nav {
   .nav-item:hover {
     background-color: #2A1D17;
     border-radius: 2px;
-    padding: 0 35px;
   }
 }
 
@@ -371,7 +366,7 @@ button:focus {
   background-color: white;
 }
 
-form {
+.form {
   padding: 55px 168px 60px 110px;
   display: flex;
   flex-direction: column;
@@ -379,10 +374,10 @@ form {
   align-items: flex-start;
 }
 
-#call-form .order-call-title{
+#form .order-call-title{
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 30px !important;
+  margin-bottom: 30px;
 }
 
 .text-input {
