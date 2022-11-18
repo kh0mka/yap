@@ -19,7 +19,7 @@
   }
 
   .map-widget {
-    width: 75vh;
+    width: 100vw;
     height: 75vh;
     border: 0;
   }
@@ -41,6 +41,13 @@
   .header {
     padding: 10px 25px;
     height: 35px;
+  }
+
+  
+  .nav-item:hover {
+    background-color: #2A1D17;
+    border-radius: 2px;
+    padding: 0 35px;
   }
 
   .nav-item+.nav-item {
@@ -153,9 +160,16 @@
     box-sizing: border-box;
   }
 
+  #form .order-call-title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 26px;
+  }
+
   .number-prefix {
-    padding-right: 0;
+    padding-right: 5px;
     min-width: 30px;
+    font-size: 16px;
   }
 
   .phone-input {

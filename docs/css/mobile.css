@@ -17,12 +17,12 @@
   }
 
   .map-widget {
-    width: 48vh;
+    width: 100vw;
     height: 65vh;
     border: 0;
   }
 
-  .nav {
+  nav {
     width: 100%;
     flex-direction: column;
   }
@@ -137,12 +137,6 @@
     background-color: white;
   }
 
-  .form h3 {
-    margin-bottom: 15px;
-    font-size: 25px;
-    line-height: 24px;
-  }
-
   .text-input {
     margin-bottom: 10px
   }
@@ -199,6 +193,11 @@
 
   .footer-row .footer-text+.footer-text {
     margin-top: 0
+  }
+
+  #form .order-call-title{
+    font-size: 25px;
+    font-weight: bold;
   }
 
   .footer-right {
