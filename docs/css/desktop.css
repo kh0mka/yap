@@ -228,7 +228,7 @@ nav {
 }
 
 #main-slider .slider-item:first-of-type {
-  background: url(../img/main-image-door.jpg) no-repeat;
+  background: url(../img/main-image-library.jpg) no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.29);
   background-blend-mode: multiply;
