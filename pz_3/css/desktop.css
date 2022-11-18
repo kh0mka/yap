@@ -1,16 +1,17 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-html {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-}
-
 body {
   background-color: #e5e5e5;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans';
   margin: auto;
   max-width: 1440px;
 }
@@ -39,19 +40,6 @@ h5 {
   line-height: 21px;
 }
 
-@media (min-width: 1300px) {
-
-  .tablet-content:not(.pc-content),
-  .mobile-content:not(.pc-content) {
-    display: none
-  }
-
-  .map-widget {
-    width: 125vh;
-    height: 77vh;
-    border: 0;
-  }
-}
 
 .secondary-text {
   font-weight: normal;
@@ -78,7 +66,7 @@ h5 {
 }
 
 .header {
-  padding: 15px 100px;
+  padding: 15px 80px;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -86,9 +74,8 @@ h5 {
   background-color: #464547;
 }
 
-.nav {
+nav {
   display: flex;
-  list-style: none;
 }
 
 .nav-item {
@@ -105,11 +92,6 @@ h5 {
   margin-left: 20px;
 }
 
-.nav-item:hover {
-  background-color: #2A1D17;
-  border-radius: 2px;
-}
-
 .slider-wrapper {
   position: relative;
 }
@@ -122,10 +104,6 @@ h5 {
   justify-content: space-between;
 }
 
-.doors .content-wrapper:first-of-type {
-  margin-top: 70px
-}
-
 .description-container {
   padding: 55px 0 30px 110px;
   display: flex;
@@ -136,16 +114,63 @@ h5 {
 }
 
 @media (min-width: 1300px) {
-  .doors .content-wrapper:nth-of-type(3n+1) .description-container {
-    margin: 30px 0 40px 0
+
+  .tablet-content:not(.pc-content),
+  .mobile-content:not(.pc-content) {
+    display: none
   }
 
-  .doors .content-wrapper:nth-child(3n+2) .description-container {
-    margin: 35px 0
+  .doors .content-wrapper {
+    margin-top: 100px;
+    position: relative;
   }
 
-  .doors .content-wrapper:nth-child(3n+3) .description-container {
-    margin: 40px 0 30px 0
+  .content-img.interior-doors
+  {
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    height: calc(100% + 60px);
+  }
+
+  .content-img.entrance-doors
+  {
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    height: calc(100% + 60px);
+  }
+
+  .content-img.interior-doors
+  {
+    position: absolute;
+    left: 0px;
+    top: -30px;
+    height: calc(100% + 60px);
+  }
+
+  #interior-doors .description-container {
+    padding-left: 710px;
+  }
+
+  .content-img.terrace-doors
+  {
+    position: absolute;
+    right: -0px;
+    top: -30px;
+    height: calc(100% + 60px);
+  }
+
+  .map-widget {
+    width: 50vw;
+    height: 100%;
+    border: 0;
+  }
+
+  .nav-item:hover {
+    background-color: #2A1D17;
+    border-radius: 2px;
+    padding: 0 35px;
   }
 }
 
@@ -217,8 +242,28 @@ h5 {
 }
 
 .slider-item_text-container {
-  margin: 160px 0 0 210px
+  margin: 160px 0 0 210px;
 }
+
+.slider-item_text-container h2{
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+
+.slider-item_text-container h4{
+  font-size: 30px;
+}
+
+.description-container .text-container h3 {
+  font-size: 34px;
+  line-height: 35px;
+}
+
+.description-container .text-container .secondary-text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
 
 .slider-buttons {
   top: 0;
@@ -269,7 +314,7 @@ button:focus {
 .review-wrapper {
   margin: 100px auto;
   padding: 55px 140px 47px;
-  height: 580px;
+  height: 590px;
   flex-direction: column;
   align-items: center;
   color: black;
@@ -309,9 +354,10 @@ button:focus {
 }
 
 .review-text {
-  padding: 25px 0;
-  height: 220px;
+  padding: 20px 0;
+  height: 231px;
   border-bottom: 1px solid rgba(153, 152, 152, 0.4);
+  overflow: auto;
 }
 
 .form-wrapper {
@@ -333,8 +379,10 @@ button:focus {
   align-items: flex-start;
 }
 
-.form h3 {
-  margin-bottom: 25px
+#form .order-call-title{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .text-input {
@@ -464,18 +512,16 @@ input[type="submit"].submit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color: rgba(255, 124, 124, 0.238);
   border-radius: 50%;
-  box-shadow: inset 0 0 0 1px lightblue;
   cursor: pointer;
-  opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
   z-index: 3;
 }
 
 .scroll-up.active {
-  opacity: .4;
+  opacity: .5;
   visibility: visible;
   transform: translateY(0);
 }
@@ -483,6 +529,7 @@ input[type="submit"].submit-btn {
 .scroll-up.active:hover {
   opacity: 1;
   transform: scale(1.2);
+  background-color: rgba(249, 114, 114, 0.547);
 }
 
 .scroll-up::before {
