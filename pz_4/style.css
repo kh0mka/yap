@@ -1,0 +1,203 @@
+*     /* установить ниженаписанные свойства для всего пространства */
+{
+    margin: 0;    /* убрать отступы */
+    padding: 0;   /* убрать поля*/
+}
+
+body {
+    min-height: 100vh;  /*устанавливается минимальная высота.  vh - Эквивалентно 1% высоты окна браузера. */
+    background: #0c192c;     /* устанавливает цвет заднего фона */
+}
+
+.container {
+    position: relative;    /* Относительное позиционирование сдвигает элемент относительно его обычного положения. */ 
+    width: 100%;      /*  устанавливает ширину элемента на 100%  */ 
+    height: 100vh;   /* устанавливает высоту элемента на 100%  */
+    overflow: hidden;   /* Контент обрезается, без предоставления прокрутки */
+}
+
+.bubbles {
+    position: relative;    /* Относительное позиционирование сдвигает элемент относительно его обычного положения*/
+    display: flex;   /* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox.*/
+}
+
+.bubbles span {
+    position: relative;   /* Относительное позиционирование сдвигает элемент относительно его обычного положения */
+    width: 100px;   /* делает ширину*/
+    height: 30px;   /* делает высоту */
+    background: #00ffff;   /* цвет для кружочков */
+    margin: 0 4px;   /* вверх и низ отступ 0 и право и лево отступ 4рх*/
+    border-radius:50%;   /* сделать из квадратов круги с помощью радиусов 50% */
+    box-shadow: 0 0 0 5px #4fc3dc44,    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    0 0 50px #00ffff,   /* offset-x | offset-y | blur-radius | color */
+    0 0 100px #00ffff;   /* offset-x | offset-y | blur-radius | color */
+    animation: animate 15s linear infinite;   /* создание анимации 15секунд по прямой и бесконечно зацикленную */
+    animation-duration: calc(200s / var(--i));   /* сама длительность полета шаров будет определяться по этой формуле, при этом
+                                                    значение --i указано в HTML коде*/
+}
+
+.bubbles span:nth-child(1) {
+    background: #fffe00;   /* цвет для шара */
+    box-shadow: 0 0 0 5px #999900,   
+    0 0 50px #fffe00,   
+    0 0 100px #fffe00; 
+}
+.bubbles span:nth-child(4) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(8) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(10) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(11) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(14) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(17) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(20) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(23) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(27) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(33) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(39) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+
+
+
+
+.bubbles span:nth-child(2) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(5) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(12) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(15) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(16) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(19) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(24) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(28) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(30) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(34) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(38) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(40) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+
+
+
+@keyframes animate { /* Правило @keyframes CSS at управляет промежуточными шагами в последовательности анимации CSS,
+                        определяя стили для ключевых кадров (или путевых точек) вдоль последовательности анимации. 
+                        Это дает больше контроля над промежуточными этапами последовательности анимации, чем над переходами*/
+    0%
+    {
+        transform: translateY(100vh) scale(1); /* чтобы кружочки летели из под экрана используется transtaleY(100vh)
+                                                  scale(1) отвечает за то, что кружочек будет определенного размера начале полета и будет расширяться со временем */
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(3); /* translateY (-10vh) будет отвечать за то, что кружки будут подниматься вверх */
+                                                /* scale(3) будет отвечать за то, что кружки будут возрастать во время полета наверх */
+    }
+}
