@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #02070d;
+}
+
+.container {
+    position: relative;    /* Относительное позиционирование сдвигает элемент относительно его обычного положения. */ 
+    width: 100%;      /*  устанавливает ширину элемента на 100%  */ 
+    height: 100vh;   /* устанавливает высоту элемента на 100%  */
+    overflow: hidden;   /* Контент обрезается, без предоставления прокрутки */
+}
+
+.bubbles {
+    position: relative;    /* Относительное позиционирование сдвигает элемент относительно его обычного положения*/
+    display: flex;   /* Элемент ведет себя как блочный элемент и размещает свое содержимое в соответствии с моделью flexbox.*/
+}
+
+.bubbles span {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background: #00ffff;
+    margin: 0 4px;
+    border-radius:50%;
+    box-shadow: 0 0 0 5px #4fc3dc44,
+    0 0 50px #00ffff,
+    0 0 100px #00ffff;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(300s / var(--i));
+}
+
+.bubbles span:nth-child(1) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,   
+    0 0 50px #fffe00,   
+    0 0 100px #fffe00; 
+}
+.bubbles span:nth-child(4) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(8) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(10) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(11) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(14) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(17) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(20) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(23) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(27) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(33) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+.bubbles span:nth-child(39) {
+    background: #fffe00;
+    box-shadow: 0 0 0 5px #999900,
+    0 0 50px #fffe00,
+    0 0 100px #fffe00;
+}
+
+
+
+.bubbles span:nth-child(2) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(5) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(12) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(15) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(16) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(19) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(24) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(28) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(30) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(34) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(38) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+.bubbles span:nth-child(40) {
+    background: #fb0dee;
+    box-shadow: 0 0 0 5px #85007e,
+    0 0 50px #fb0dee,
+    0 0 100px #fb0dee;
+}
+
+
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh) scale(1); /* чтобы кружочки летели из под экрана используется transtaleY(100vh)
+                                                  scale(1) отвечает за то, что кружочек будет определенного размера в начале полета и будет расширяться со временем */
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(3); /* translateY (-10vh) будет отвечать за то, что кружки будут подниматься вверх */
+                                                /* scale(3) будет отвечать за то, что кружки будут возрастать во время полета наверх */
+    }
+}
