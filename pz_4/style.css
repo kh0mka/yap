@@ -1,12 +1,12 @@
-*     /* установить ниженаписанные свойства для всего пространства */
+*
 {
-    margin: 0;    /* убрать отступы */
-    padding: 0;   /* убрать поля*/
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    min-height: 100vh;  /*устанавливается минимальная высота.  vh - Эквивалентно 1% высоты окна браузера. */
-    background: #0c192c;     /* устанавливает цвет заднего фона */
+    min-height: 100vh;
+    background: #02070d;
 }
 
 .container {
@@ -22,22 +22,21 @@ body {
 }
 
 .bubbles span {
-    position: relative;   /* Относительное позиционирование сдвигает элемент относительно его обычного положения */
-    width: 100px;   /* делает ширину*/
-    height: 30px;   /* делает высоту */
-    background: #00ffff;   /* цвет для кружочков */
-    margin: 0 4px;   /* вверх и низ отступ 0 и право и лево отступ 4рх*/
-    border-radius:50%;   /* сделать из квадратов круги с помощью радиусов 50% */
-    box-shadow: 0 0 0 5px #4fc3dc44,    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    0 0 50px #00ffff,   /* offset-x | offset-y | blur-radius | color */
-    0 0 100px #00ffff;   /* offset-x | offset-y | blur-radius | color */
-    animation: animate 15s linear infinite;   /* создание анимации 15секунд по прямой и бесконечно зацикленную */
-    animation-duration: calc(200s / var(--i));   /* сама длительность полета шаров будет определяться по этой формуле, при этом
-                                                    значение --i указано в HTML коде*/
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background: #00ffff;
+    margin: 0 4px;
+    border-radius:50%;
+    box-shadow: 0 0 0 5px #4fc3dc44,
+    0 0 50px #00ffff,
+    0 0 100px #00ffff;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(300s / var(--i));
 }
 
 .bubbles span:nth-child(1) {
-    background: #fffe00;   /* цвет для шара */
+    background: #fffe00;
     box-shadow: 0 0 0 5px #999900,   
     0 0 50px #fffe00,   
     0 0 100px #fffe00; 
@@ -108,7 +107,6 @@ body {
     0 0 50px #fffe00,
     0 0 100px #fffe00;
 }
-
 
 
 
@@ -187,13 +185,11 @@ body {
 
 
 
-@keyframes animate { /* Правило @keyframes CSS at управляет промежуточными шагами в последовательности анимации CSS,
-                        определяя стили для ключевых кадров (или путевых точек) вдоль последовательности анимации. 
-                        Это дает больше контроля над промежуточными этапами последовательности анимации, чем над переходами*/
+@keyframes animate {
     0%
     {
         transform: translateY(100vh) scale(1); /* чтобы кружочки летели из под экрана используется transtaleY(100vh)
-                                                  scale(1) отвечает за то, что кружочек будет определенного размера начале полета и будет расширяться со временем */
+                                                  scale(1) отвечает за то, что кружочек будет определенного размера в начале полета и будет расширяться со временем */
     }
     100%
     {
