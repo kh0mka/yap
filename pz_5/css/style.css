@@ -1,0 +1,171 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.total-price {
+    background-color: burlywood;
+}
+
+select {
+    width: 250px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+form > input {
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+.clear {
+    background-color: red;
+    font-size: 18px;
+    border-radius: 5%;
+    border: none;
+    width: 110px;
+    height: 30px;
+    color: white;
+}
+
+.add {
+    background-color: lightcoral;
+    font-size: 18px;
+    border-radius: 5%;
+    border: none;
+    width: 110px;
+    height: 28px;
+    color: white;
+}
+
+.add:hover {
+    background-color: lightsalmon;
+}
+
+.sum {
+    background-color: #04AA6D;
+    font-size: 18px;
+    border-radius: 5%;
+    border: none;
+    width: 110px;
+    height: 30px;
+    color: white;
+}
+
+.sum:hover {
+    background-color: green;
+}
+
+.clear:hover {
+    background-color: rosybrown;
+}
+
+.buttons {
+    padding-top: 30px;
+    width: 1000px;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+.content {
+    margin: auto;
+    width: 1000px;
+}
+
+label {
+    color: black;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: black;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+h2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.forms {
+    margin: auto;
+    display: flex;
+    width: 1000px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+.foodList {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+table {
+    margin: auto;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.total-price > td[colspan="4"] {
+    text-align: right;
+    background-color: seagreen;
+    border: 3px #04AA6D;
+}
+
+.total-price > td {
+    text-align: left;
+    background-color: seagreen;
+    border: 3px #04AA6D;
+}
+
+tr > th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    background-color: lightgray;
+}
+
+#error {
+	height: 20px;
+	margin: auto;
+	padding-bottom: 15px;
+	color: red;
+	text-align: center;
+	margin-bottom: 10px;
+	vertical-align: center;
+}
+
+.error-background {
+	margin-bottom: 10px;
+	background-color: #FFCCCB;
+	vertical-align: center;
+	border-radius: 5px;
+}
