@@ -79,12 +79,12 @@ function calculateTotal(tableId) {
 
     for (let i = 1; i < rowCount; i++) {
         let row = table.rows[i];
-        let price = row.cells[3].innerHTML;
-        total += parseFloat(price);
+        let ccals = row.cells[3].innerHTML;
+        total += parseFloat(ccals);
     }
 
     let row = table.insertRow(-1);
-    row.className += 'total-price';
+    row.className += 'total-ccals';
 
     let nameCell = row.insertCell(0);
     nameCell.innerHTML = 'Итого';

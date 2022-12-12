@@ -5,7 +5,7 @@
     font-size: 20px;
 }
 
-.total-price {
+.total-ccals {
     background-color: burlywood;
 }
 
@@ -123,13 +123,13 @@ table {
     width: 100%;
 }
 
-.total-price > td[colspan="4"] {
+.total-ccals > td[colspan="4"] {
     text-align: right;
     background-color: seagreen;
     border: 3px #04AA6D;
 }
 
-.total-price > td {
+.total-ccals > td {
     text-align: left;
     background-color: seagreen;
     border: 3px #04AA6D;
