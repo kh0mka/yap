@@ -24,6 +24,13 @@ form > input {
     line-height: inherit;
 }
 
+.fat-boy {
+    background-color: green;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 970px;
+}
+
 .clear {
     background-color: red;
     font-size: 18px;

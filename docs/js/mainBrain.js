@@ -93,6 +93,14 @@ function calculateTotal(tableId) {
     totalCell.innerHTML = total.toFixed(2) + ' ккал.';
     totalCell.colSpan = 4;
 
+    let fatBoy = document.getElementById('fatBoy');
+
+    if (total > 5000) {
+        alert("Вы толстый");
+
+        return;
+    }
+
     isTotalCalculated = true;
 }
 
