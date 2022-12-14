@@ -21,6 +21,12 @@ function addRow(tableId) {
         return;
     }
 
+    if (ValueOfDishes <= 0)
+    {
+        alert("Неверное количество блюд!");
+        return;
+    }
+
     let table = document.getElementById(tableId);
 
     if (addedDishes.includes(NameDish)) {

@@ -21,6 +21,12 @@ function addRow(tableId) {
         return;
     }
 
+    if (ValueOfDishes <= 0)
+    {
+        alert("Неверное количество блюд!");
+        return;
+    }
+
     let table = document.getElementById(tableId);
 
     if (addedDishes.includes(NameDish)) {
@@ -92,14 +98,6 @@ function calculateTotal(tableId) {
     let totalCell = row.insertCell(1);
     totalCell.innerHTML = total.toFixed(2) + ' ккал.';
     totalCell.colSpan = 4;
-
-    let fatBoy = document.getElementById('fatBoy');
-
-    if (total > 5000) {
-        alert("Вы толстый");
-
-        return;
-    }
 
     isTotalCalculated = true;
 }
