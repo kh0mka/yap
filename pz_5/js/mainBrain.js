@@ -100,6 +100,12 @@ function calculateTotal(tableId) {
     totalCell.colSpan = 4;
 
     isTotalCalculated = true;
+	
+	if (total > 5000)
+	{
+		alert("You fat pig");
+		return;
+	}
 }
 
 function clearAllRows(tableId) {
